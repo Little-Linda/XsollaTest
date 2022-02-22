@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/XsollaTest/static/css/main.b1372a60.css",
+    "main.css": "/XsollaTest/static/css/main.5a6a5d94.css",
     "main.js": "/XsollaTest/static/js/main.7e8792f7.js",
     "static/js/787.a86f3764.chunk.js": "/XsollaTest/static/js/787.a86f3764.chunk.js",
     "static/media/AvenirLTStd-Black.otf": "/XsollaTest/static/media/AvenirLTStd-Black.7ce894e12078ca8c5134.otf",
     "static/media/AvenirLTStd-Book.otf": "/XsollaTest/static/media/AvenirLTStd-Book.813557df4c7a90b1a474.otf",
     "index.html": "/XsollaTest/index.html",
-    "main.b1372a60.css.map": "/XsollaTest/static/css/main.b1372a60.css.map",
+    "main.5a6a5d94.css.map": "/XsollaTest/static/css/main.5a6a5d94.css.map",
     "main.7e8792f7.js.map": "/XsollaTest/static/js/main.7e8792f7.js.map",
     "787.a86f3764.chunk.js.map": "/XsollaTest/static/js/787.a86f3764.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1372a60.css",
+    "static/css/main.5a6a5d94.css",
     "static/js/main.7e8792f7.js"
   ]
 }
