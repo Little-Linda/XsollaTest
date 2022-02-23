@@ -63,7 +63,9 @@
     height: 86%;
     overflow: auto;
     display: grid;
-    grid-gap: 1.5rem;
+    /*grid-gap: 1.5rem;*/
+    grid-gap: 2rem;
+    overflow-x: hidden;
 }
 /* Works on Firefox */
 * {
@@ -93,12 +95,14 @@
     background-size: cover;
     display: inline-block;
     vertical-align: top;
-    width: 100%;
-    min-height: 286px;
-   /* margin: 17px 17px;*/
+    /*width: 100%;
+    min-height: 286px;*/
     border-radius: 6px;
     position: relative;
     color: #FFFFFF;
+    width: 99%;
+    min-height: 264px;
+    margin: 0 auto;
 }
 .cards-title{
     font-family: 'AvenirBold', sans-serif;
@@ -182,6 +186,11 @@
 }
 .block-margin-style{
     margin: 24px 0;
+}
+.test{
+    padding: 0 30px;
+    height: 95%;
+    /*width: 90%*/;
 }
 /*------------------------------------------------------*/
 @media (min-width: 1400px) {
