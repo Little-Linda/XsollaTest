@@ -25,9 +25,28 @@ function Select(props) {
 
     // фильтр по городам и датам
     function filterApply(e, setVal) {
-        const filteredValue = e === "all" ? props.items : props.items.filter((p) => {
-            return p.city === selected.city && p.date.split('.')[1] === monthList2[selected.month];
-        });
+        const filteredValue = e === "all" ?
+            props.items.filter((p) => {
+                    console.log(selected.city);
+                    console.log(selected.month);
+                    console.log(p.city);
+                    if(selected.city === 'all' && selected.month !== 'all'){
+                        return p.date.split('.')[1] === monthList2[selected.month];
+                    }
+                    if(selected.city !== 'all' && selected.month === 'all'){
+                        return p.city === selected.city;
+                    }
+                return p;
+            }) :
+            props.items.filter((p) => {
+                if (selected.month === undefined || selected.month === 'all') {
+                    return p.city === selected.city;
+                }
+                if (selected.city === undefined || selected.city === 'all') {
+                    return p.date.split('.')[1] === monthList2[selected.month];
+                }
+                return p.city === selected.city && p.date.split('.')[1] === monthList2[selected.month];
+            });
         props.filtered(filteredValue);
         setVal(e);
     }
