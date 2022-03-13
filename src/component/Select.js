@@ -27,13 +27,14 @@ function Select(props) {
     function filterApply(e, setVal) {
         const filteredValue = e === "all" ?
             props.items.filter((p) => {
-                    console.log(selected.city);
-                    console.log(selected.month);
-                    console.log(p.city);
-                    if(selected.city === 'all' && selected.month !== 'all'){
+                    if (selected.city === undefined && selected.month === 'all' ||
+                        selected.city === 'all' && selected.month === undefined) {
+                        return props.items
+                    }
+                    if (selected.city === 'all' && selected.month !== 'all'){
                         return p.date.split('.')[1] === monthList2[selected.month];
                     }
-                    if(selected.city !== 'all' && selected.month === 'all'){
+                    if (selected.city !== 'all' && selected.month === 'all'){
                         return p.city === selected.city;
                     }
                 return p;
